@@ -20,7 +20,7 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	$(CC) $(FLAGS) -I $(INCLUDE) -o $@ -c $<
 
 $(LIBFT_DIR)/$(LIBFT):
-	make -C $(LIBFT_DIR)
+	make bonus -C $(LIBFT_DIR)
 
 $(NAME): $(LIBFT_DIR)/$(LIBFT) $(addprefix $(OBJ_DIR)/,$(OBJ))
 	cp $(LIBFT_DIR)/$(LIBFT) $(NAME)
