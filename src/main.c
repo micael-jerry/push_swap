@@ -6,7 +6,7 @@
 /*   By: mfidimal <mfidimal@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 06:13:47 by mfidimal          #+#    #+#             */
-/*   Updated: 2024/05/22 11:11:56 by mfidimal         ###   ########.fr       */
+/*   Updated: 2024/05/22 11:22:52 by mfidimal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ t_list	*init_list_a(int argc, char const *argv[])
 int	main(int argc, char const *argv[])
 {
 	t_list	*list_a;
+	t_list	*list_b;
 
 	if (argc < 2)
 		return (0);
