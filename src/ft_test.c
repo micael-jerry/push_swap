@@ -1,24 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.h                                        :+:      :+:    :+:   */
+/*   ft_test.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mfidimal <mfidimal@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/01 06:10:24 by mfidimal          #+#    #+#             */
-/*   Updated: 2024/05/24 06:38:47 by mfidimal         ###   ########.fr       */
+/*   Created: 2024/05/24 06:34:32 by mfidimal          #+#    #+#             */
+/*   Updated: 2024/05/24 06:43:59 by mfidimal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUSH_SWAP_H
-#define PUSH_SWAP_H
+#include "push_swap.h"
 
-#include "../ft_printf/include/ft_printf.h"
+void print_list(t_list *list)
+{
+	int i;
+	t_list    *tmp;
 
-void	ft_swap_a(t_list *list_a, t_list *list_b);
+	i = 0;
+    tmp = list;
+    while (tmp)
+    {
+        ft_printf("%d: %d\n",i, *(int *)tmp->content);
+        tmp = tmp->next;
+		i++;
+    }
+    ft_printf("\n");
+}
 
-// FOR TESTING
-void print_list(t_list *list);
-void list_status(t_list *list_a, t_list *list_b);
-
-#endif
+void list_status(t_list *list_a, t_list *list_b)
+{
+	ft_printf("List a:\n");
+	print_list(list_a);
+	ft_printf("List b:\n");
+	print_list(list_b);
+}

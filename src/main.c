@@ -6,7 +6,7 @@
 /*   By: mfidimal <mfidimal@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 06:13:47 by mfidimal          #+#    #+#             */
-/*   Updated: 2024/05/22 11:22:52 by mfidimal         ###   ########.fr       */
+/*   Updated: 2024/05/24 06:41:48 by mfidimal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,7 @@ int	main(int argc, char const *argv[])
 	if (argc < 2)
 		return (0);
 	list_a = init_list_a(argc, argv);
+	list_b = NULL;
+	list_status(list_a, list_b);
 	return (0);
 }
