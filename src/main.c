@@ -6,7 +6,7 @@
 /*   By: mfidimal <mfidimal@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 06:13:47 by mfidimal          #+#    #+#             */
-/*   Updated: 2024/05/24 07:41:57 by mfidimal         ###   ########.fr       */
+/*   Updated: 2024/05/24 07:50:34 by mfidimal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,6 @@ int	main(int argc, char const *argv[])
 		return (0);
 	list_a = init_list_a(argc, argv);
 	list_b = NULL;
-	ft_swap(&list_a, "sa");
-	ft_swap(&list_b, "sb");
 	list_status(list_a, list_b);
 	return (0);
 }
