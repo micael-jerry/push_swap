@@ -6,7 +6,7 @@
 /*   By: mfidimal <mfidimal@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 06:10:24 by mfidimal          #+#    #+#             */
-/*   Updated: 2024/05/24 06:38:47 by mfidimal         ###   ########.fr       */
+/*   Updated: 2024/05/24 07:39:16 by mfidimal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include "../ft_printf/include/ft_printf.h"
 
-void	ft_swap_a(t_list *list_a, t_list *list_b);
+void	ft_swap(t_list **list, char *print_str);
 
 // FOR TESTING
 void print_list(t_list *list);
