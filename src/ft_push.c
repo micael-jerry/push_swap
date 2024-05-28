@@ -6,7 +6,7 @@
 /*   By: mfidimal <mfidimal@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/28 11:55:00 by mfidimal          #+#    #+#             */
-/*   Updated: 2024/05/28 13:46:03 by mfidimal         ###   ########.fr       */
+/*   Updated: 2024/05/28 14:34:30 by mfidimal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_push_a(t_list **list_a, t_list **list_b)
 {
-	t_list *first_element_b;
+	t_list	*first_element_b;
 
 	if (!list_b[0])
 		return ;
@@ -24,9 +24,9 @@ void	ft_push_a(t_list **list_a, t_list **list_b)
 	ft_printf("pa");
 }
 
-void    ft_push_b(t_list **list_a, t_list **list_b)
+void	ft_push_b(t_list **list_a, t_list **list_b)
 {
-	t_list *first_element_a;
+	t_list	*first_element_a;
 
 	if (!list_a[0])
 		return ;
