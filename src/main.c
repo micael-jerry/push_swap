@@ -6,7 +6,7 @@
 /*   By: mfidimal <mfidimal@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 06:13:47 by mfidimal          #+#    #+#             */
-/*   Updated: 2024/05/24 07:50:34 by mfidimal         ###   ########.fr       */
+/*   Updated: 2024/05/28 11:49:35 by mfidimal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,10 @@ t_list	*init_list_a(int argc, char const *argv[])
 	{
 		content = (int *)malloc(sizeof(int));
 		if (!content)
+		{
+			ft_lstclear(&list_a, &free);
 			return (NULL);
+		}
 		*content = ft_atoi(argv[i]);
 		ft_lstadd_back(&list_a, ft_lstnew(content));
 		i++;
