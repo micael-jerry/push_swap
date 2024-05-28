@@ -6,7 +6,7 @@
 /*   By: mfidimal <mfidimal@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/24 06:34:32 by mfidimal          #+#    #+#             */
-/*   Updated: 2024/05/24 06:43:59 by mfidimal         ###   ########.fr       */
+/*   Updated: 2024/05/28 12:18:11 by mfidimal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,4 +34,5 @@ void list_status(t_list *list_a, t_list *list_b)
 	print_list(list_a);
 	ft_printf("List b:\n");
 	print_list(list_b);
+	ft_printf("\n================================\n");
 }
