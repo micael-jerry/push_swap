@@ -42,6 +42,8 @@ int	main(int argc, char const *argv[])
 	if (argc < 2)
 		return (0);
 	list_a = init_list_a(argc, argv);
+	if (ft_is_sorted_list(&list_a))
+		return (0);
 	list_b = NULL;
 	list_status(list_a, list_b);
 	return (0);

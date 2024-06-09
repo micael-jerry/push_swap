@@ -15,6 +15,8 @@
 
 # include "../ft_printf/include/ft_printf.h"
 
+int		ft_is_sorted_list(t_list **list);
+
 void	ft_swap_a(t_list **list_a);
 void	ft_swap_b(t_list **list_b);
 void	ft_swap_ss(t_list **list_a, t_list **list_b);
