@@ -6,7 +6,7 @@
 /*   By: mfidimal <mfidimal@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 06:10:24 by mfidimal          #+#    #+#             */
-/*   Updated: 2024/05/28 14:02:08 by mfidimal         ###   ########.fr       */
+/*   Updated: 2025/01/06 08:32:05 by mfidimal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,18 @@
 # define PUSH_SWAP_H
 
 # include "../ft_printf/include/ft_printf.h"
+
+typedef struct s_list_int
+{
+	int				value;
+	struct s_list_int	*next;
+}				t_list_int;
+
+t_list_int	*ft_lstintnew(int value);
+t_list_int	*ft_lstintlast(t_list_int *lst_one);
+void	ft_lstintadd_front(t_list_int **lst, t_list_int *new);
+void	ft_lstintadd_back(t_list_int **lst, t_list_int *new);
+int		ft_lstintsize(t_list_int *lst_one);
 
 int		ft_is_sorted_list(t_list **list);
 

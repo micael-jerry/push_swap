@@ -4,7 +4,7 @@ FLAGS= -Wall -Wextra -Werror
 INCLUDE= ./include
 
 SRC_DIR=./src
-SRC= ft_swap.c ft_push.c ft_rotate.c ft_reverse_rotate.c ft_test.c ft_utils.c main.c
+SRC= ft_swap.c ft_push.c ft_rotate.c ft_reverse_rotate.c ft_test.c ft_utils.c list_int.c main.c
 
 OBJ_DIR= ./obj
 OBJ= $(SRC:.c=.o)
