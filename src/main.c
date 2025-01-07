@@ -6,29 +6,23 @@
 /*   By: mfidimal <mfidimal@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 06:13:47 by mfidimal          #+#    #+#             */
-/*   Updated: 2024/05/28 14:26:42 by mfidimal         ###   ########.fr       */
+/*   Updated: 2025/01/07 06:56:28 by mfidimal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-t_list	*init_list_a(int argc, char const *argv[])
+t_list_int	*init_list_a(int argc, char const *argv[])
 {
-	t_list	*list_a;
+	t_list_int	*list_a;
 	int		i;
-	int		*content;
+	int		value;
 
 	i = 1;
 	while (i < argc)
 	{
-		content = (int *)malloc(sizeof(int));
-		if (!content)
-		{
-			ft_lstclear(&list_a, &free);
-			return (NULL);
-		}
-		*content = ft_atoi(argv[i]);
-		ft_lstadd_back(&list_a, ft_lstnew(content));
+		value = ft_atoi(argv[i]);
+		ft_lstintadd_back(&list_a, ft_lstintnew(value));
 		i++;
 	}
 	return (list_a);
@@ -36,8 +30,8 @@ t_list	*init_list_a(int argc, char const *argv[])
 
 int	main(int argc, char const *argv[])
 {
-	t_list	*list_a;
-	t_list	*list_b;
+	t_list_int	*list_a;
+	t_list_int	*list_b;
 
 	if (argc < 2)
 		return (0);
