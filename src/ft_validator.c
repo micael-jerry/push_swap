@@ -24,7 +24,7 @@ int ft_is_duplicate(t_list_int **list)
 	t_list_int *tmp_el;
 
 	if (ft_lstintsize(list[0]) <= 1)
-		return (1);
+		return (0);
 	
 	lst_element = list[0];
 	while (lst_element)

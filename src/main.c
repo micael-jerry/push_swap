@@ -6,7 +6,7 @@
 /*   By: mfidimal <mfidimal@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 06:13:47 by mfidimal          #+#    #+#             */
-/*   Updated: 2025/01/08 18:05:27 by mfidimal         ###   ########.fr       */
+/*   Updated: 2025/01/08 21:32:05 by mfidimal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,10 +43,9 @@ int	main(int argc, char const *argv[])
 	*list_b = NULL;
 
 	if (ft_is_duplicate(list_a))
-		return (ft_printf("duplicate\n"),0);
+		return (ft_printf("duplicate\n"), -1);
 	if (ft_is_sorted(list_a))
-		return (0);
-	list_b = NULL;
+		return (free_list(list_a), free_list(list_b), 0);
 	list_status(list_a, list_b);
 	return (0);
 }
