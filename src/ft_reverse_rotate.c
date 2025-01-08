@@ -6,7 +6,7 @@
 /*   By: mfidimal <mfidimal@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/28 14:00:21 by mfidimal          #+#    #+#             */
-/*   Updated: 2025/01/07 06:33:56 by mfidimal         ###   ########.fr       */
+/*   Updated: 2025/01/08 18:05:04 by mfidimal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,18 +43,18 @@ static void	ft_reverse_rotate(t_list_int **list)
 void	ft_reverse_rotate_a(t_list_int **list_a)
 {
 	ft_reverse_rotate(list_a);
-	ft_printf("ra\n");
+	ft_printf("rra\n");
 }
 
 void	ft_reverse_rotate_b(t_list_int **list_b)
 {
 	ft_reverse_rotate(list_b);
-	ft_printf("rb\n");
+	ft_printf("rrb\n");
 }
 
 void	ft_reverse_rotate_rr(t_list_int **list_a, t_list_int **list_b)
 {
 	ft_reverse_rotate_a(list_a);
 	ft_reverse_rotate_b(list_b);
-	ft_printf("rr\n");
+	ft_printf("rrr\n");
 }
