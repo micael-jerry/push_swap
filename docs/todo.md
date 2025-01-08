@@ -3,6 +3,7 @@
 ## Error Handling
 
 - Input validation
+- Liberer les memoires apres utilisation
 
 - ✅ sa (swap a) : Intervertit les 2 premiers éléments au sommet de la pile a. Ne fait rien s’il n’y en a qu’un ou aucun.
 - ✅ sb (swap b ) : Intervertit les 2 premiers éléments au sommet de la pile b. Ne fait rien s’il n’y en a qu’un ou aucun.
