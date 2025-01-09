@@ -1,31 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_validator.c                                     :+:      :+:    :+:   */
+/*   ft_params_validator.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mfidimal <mfidimal@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/09 11:49:12 by mfidimal          #+#    #+#             */
-/*   Updated: 2025/01/09 11:49:14 by mfidimal         ###   ########.fr       */
+/*   Created: 2025/01/09 12:05:40 by mfidimal          #+#    #+#             */
+/*   Updated: 2025/01/09 12:12:13 by mfidimal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	ft_is_sorted(t_list_int **list)
+int ft_is_duplicate(int argc, char const *argv[])
 {
-	t_list_int	*lst_element;
+	int i;
+	int j;
 
-	if (ft_lstintsize(list[0]) <= 1)
-		return (1);
+	if (argc <= 2)
+		return (0);
 
-	lst_element = list[0];
-	while (lst_element)
+	i = 1;
+	while (i < argc)
 	{
-		if (lst_element->next)
-			if (lst_element->value > lst_element->next->value)
-				return (0);
-		lst_element = lst_element->next;
+		j = i+1;
+		while (j < argc)
+		{
+			if (ft_atoi(argv[i]) == ft_atoi(argv[j]))
+				return (1);
+			j++;
+		}
+		i++;
 	}
-	return (1);
+	return (0);
+}
+
+void ft_params_validator(int argc, char const *argv[])
+{
+	if (ft_is_duplicate(argc, argv))
+		put_error();
 }

@@ -14,3 +14,9 @@ void free_list(t_list_int **list)
 	}
 	free(list);
 }
+
+void put_error()
+{
+	ft_putendl_fd("Error", 1);
+	exit(0);
+}

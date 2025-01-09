@@ -15,3 +15,7 @@
 - ✅ pas de parametre, pas d'affichage
 - Input validation
 - ✅ Liberer les memoires apres utilisation
+
+En cas d’erreur, vous devez afficher "Error" suivi d’un ’\n’ sur la sortie d’erreur.
+Par exemple, si certains paramètres ne sont pas des nombres, ne tiennent pas dans
+un int, ou encore, ✅ s’il y a des doublons.
