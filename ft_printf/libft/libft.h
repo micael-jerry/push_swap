@@ -6,7 +6,7 @@
 /*   By: mfidimal <mfidimal@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 13:40:17 by mfidimal          #+#    #+#             */
-/*   Updated: 2024/03/12 10:43:16 by mfidimal         ###   ########.fr       */
+/*   Updated: 2025/01/09 17:13:40 by mfidimal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ void				*ft_memchr(const void *mem_block, int chr, size_t size);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
 char				*ft_strnstr(const char *big, const char *little,
 						size_t len);
-int					ft_atoi(const char *str);
+long				ft_atoi(const char *str);
 void				*ft_calloc(size_t n, size_t size);
 char				*ft_strdup(const char *str);
 // ADDITIONAL
