@@ -6,7 +6,7 @@
 /*   By: mfidimal <mfidimal@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 06:13:47 by mfidimal          #+#    #+#             */
-/*   Updated: 2025/01/09 12:10:31 by mfidimal         ###   ########.fr       */
+/*   Updated: 2025/01/09 18:17:16 by mfidimal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ int	main(int argc, char const *argv[])
 
 	if (ft_is_sorted(list_a))
 		return (free_list(list_a), free_list(list_b), 0);
+
 	list_status(list_a, list_b);
 	return (0);
 }

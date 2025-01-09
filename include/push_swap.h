@@ -6,7 +6,7 @@
 /*   By: mfidimal <mfidimal@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 06:10:24 by mfidimal          #+#    #+#             */
-/*   Updated: 2025/01/09 12:07:36 by mfidimal         ###   ########.fr       */
+/*   Updated: 2025/01/09 17:47:08 by mfidimal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,6 @@ void	ft_reverse_rotate_rr(t_list_int **list_a, t_list_int **list_b);
 
 // VALIDATOR
 int		ft_is_sorted(t_list_int **list);
-int		ft_is_duplicate(int argc, char const *argv[]);
 void	ft_params_validator(int argc, char const *argv[]);
 
 // UTILS
