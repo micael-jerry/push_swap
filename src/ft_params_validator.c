@@ -6,7 +6,7 @@
 /*   By: mfidimal <mfidimal@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 12:05:40 by mfidimal          #+#    #+#             */
-/*   Updated: 2025/01/09 18:18:43 by mfidimal         ###   ########.fr       */
+/*   Updated: 2025/01/10 22:56:38 by mfidimal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ static int ft_str_isnum(char const *str)
 	int	i;
 
 	i = 0;
-	if (str[0] == '-')
+	if (str[0] == '-' || str[0] == '+')
 		i++;
 	while (str[i])
 	{
