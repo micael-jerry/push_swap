@@ -17,7 +17,7 @@
 ## Liste de contrôle des erreurs
 
 - ✅ Le programme doit fonctionner avec plusieurs arguments numériques
-  - ✅ ./push_swap 1 3 5 ++9 20 -4 50 60 04 08
+  - ✅ ./push_swap 1 3 5 +9 20 -4 50 60 04 08
 - ✅ Le programme fonctionne également si vous recevez une seule liste de caractères en tant que paramètre
   - ✅ ./push_swap "3 4 6 8 9 74 -56 +495"
 - ✅ Le programme ne devrait PAS fonctionner s'il rencontre un autre personnage
