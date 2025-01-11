@@ -46,7 +46,7 @@
 
 ## Liste de contrôle des algorithmes/tris
 
-- Vérifiez si l'ordre de la liste est correct ou si elle doit être triée
+- ✅ Vérifiez si l'ordre de la liste est correct ou si elle doit être triée
 - Créer un petit algorithme pour les petits nombres (5 et moins)
   - Implémenter une condition pour 2 nombres
   - Créer un algorithme pour 3 nombres
