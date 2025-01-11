@@ -6,7 +6,7 @@
 /*   By: mfidimal <mfidimal@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 06:13:47 by mfidimal          #+#    #+#             */
-/*   Updated: 2025/01/11 15:41:02 by mfidimal         ###   ########.fr       */
+/*   Updated: 2025/01/11 21:23:18 by mfidimal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,11 @@ t_list_int	**init_list_a(char *argv[], int init_index)
 	return (list_a);
 }
 
-void sort_stack(t_list_int **stack_a, t_list_int **stack_b)
+void sort_stack(t_list_int **stack_a)
 {
 	int	stack_a_len;
 
-	stack_a_len = ft_lstintsize(stack_a);
+	stack_a_len = ft_lstintsize(stack_a[0]);
 	if (stack_a_len == 2)
 		ft_sort_two(stack_a);
 }
@@ -61,7 +61,7 @@ int	main(int argc, char const *argv[])
 	if (ft_is_sorted(list_a))
 		return (free_list(list_a), free_list(list_b), 0);
 
-	sort_stack(list_a, list_a);
+	sort_stack(list_a);
 
 	list_status(list_a, list_b);
 	return (0);
