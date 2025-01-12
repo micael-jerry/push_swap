@@ -6,7 +6,7 @@
 /*   By: mfidimal <mfidimal@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 06:13:47 by mfidimal          #+#    #+#             */
-/*   Updated: 2025/01/11 23:16:08 by mfidimal         ###   ########.fr       */
+/*   Updated: 2025/01/12 16:40:50 by mfidimal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,9 @@ void sort_stack(t_list_int **stack_a)
 
 	stack_a_len = ft_lstintsize(stack_a[0]);
 	if (stack_a_len == 2)
-		ft_sort_two(stack_a);
+		ft_sort_2(stack_a);
+	if (stack_a_len == 3)
+		ft_sort_3(stack_a);
 }
 
 int	main(int argc, char const *argv[])
