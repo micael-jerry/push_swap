@@ -1,41 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_test.c                                          :+:      :+:    :+:   */
+/*   index_util.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mfidimal <mfidimal@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/24 06:34:32 by mfidimal          #+#    #+#             */
-/*   Updated: 2025/01/12 10:16:39 by mfidimal         ###   ########.fr       */
+/*   Created: 2025/01/11 22:35:48 by mfidimal          #+#    #+#             */
+/*   Updated: 2025/01/12 10:14:51 by mfidimal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	print_list(t_list_int **list)
+static t_list_int	*find_next_min(t_list_int **list)
 {
-	int		i;
+	t_list_int	*min;
 	t_list_int	*tmp;
 
-	if (list == NULL || list[0] == NULL)
-		return ;
-
-	i = 0;
-	tmp = list[0];
-	while (tmp)
+	min = list[0];
+	tmp = list[0]->next;
+	while (tmp != NULL)
 	{
-		ft_printf("%d: %d | i= %d\n", i, tmp->value, tmp->index);
+		if ((tmp->index == -1) && (tmp->value < min->value))
+			min = tmp;
 		tmp = tmp->next;
-		i++;
 	}
-	ft_printf("\n");
+	if (min->index != -1)
+		return (NULL);
+	return (min);
 }
 
-void	list_status(t_list_int **list_a, t_list_int **list_b)
+void ft_listint_indexation(t_list_int **list)
 {
-	ft_printf("\nList a:\n");
-	print_list(list_a);
-	ft_printf("List b:\n");
-	print_list(list_b);
-	ft_printf("\n================================\n");
+	int	index;
+	t_list_int	*tmp;
+
+	index = 0;
+	tmp = find_next_min(list);
+	while (tmp)
+	{
+		tmp->index = index;
+		index++;
+		tmp = find_next_min(list);
+	}
 }

@@ -6,7 +6,7 @@
 /*   By: mfidimal <mfidimal@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 12:05:40 by mfidimal          #+#    #+#             */
-/*   Updated: 2025/01/11 10:57:50 by mfidimal         ###   ########.fr       */
+/*   Updated: 2025/01/11 23:24:01 by mfidimal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ void	ft_params_validator(char *argv[], int init_index)
 		if (!ft_str_isnum(argv[i]))
 			put_error();
 		argv_tmp = ft_atoi(argv[i]);
-		if (argv_tmp < -2147483648 || argv_tmp > 2147483648)
+		if (argv_tmp < INT_MIN_VALUE || argv_tmp > INT_MAX_VALUE)
 			put_error();
 		i++;
 	}

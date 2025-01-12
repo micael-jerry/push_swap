@@ -6,7 +6,7 @@
 /*   By: mfidimal <mfidimal@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 06:10:24 by mfidimal          #+#    #+#             */
-/*   Updated: 2025/01/11 15:40:44 by mfidimal         ###   ########.fr       */
+/*   Updated: 2025/01/11 23:10:34 by mfidimal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 typedef struct s_list_int
 {
 	int				value;
+	int				index;
 	struct s_list_int	*next;
 }				t_list_int;
 
@@ -51,6 +52,7 @@ void	ft_params_validator(char *argv[], int init_index);
 char	**ft_get_arg_val(int argc, char const *argv[], int *argv_init_index);
 void	free_list(t_list_int **list);
 void	put_error();
+void	ft_listint_indexation(t_list_int **list);
 
 // SORTING
 void ft_sort_two(t_list_int **stack_a);

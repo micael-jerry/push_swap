@@ -6,7 +6,7 @@
 /*   By: mfidimal <mfidimal@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 06:13:47 by mfidimal          #+#    #+#             */
-/*   Updated: 2025/01/11 21:23:18 by mfidimal         ###   ########.fr       */
+/*   Updated: 2025/01/11 23:16:08 by mfidimal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ t_list_int	**init_list_a(char *argv[], int init_index)
 		ft_lstintadd_back(list_a, ft_lstintnew(value));
 		i++;
 	}
+	ft_listint_indexation(list_a);
 	return (list_a);
 }
 
