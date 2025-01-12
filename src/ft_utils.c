@@ -6,26 +6,11 @@
 /*   By: mfidimal <mfidimal@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/11 10:17:42 by mfidimal          #+#    #+#             */
-/*   Updated: 2025/01/11 10:27:03 by mfidimal         ###   ########.fr       */
+/*   Updated: 2025/01/12 10:59:37 by mfidimal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-void free_list(t_list_int **list)
-{
-	t_list_int *element;
-	t_list_int *tmp;
-
-	element = list[0];
-	while (element)
-	{
-		tmp = element;
-		element = element->next;
-		free(tmp);
-	}
-	free(list);
-}
 
 void put_error()
 {
